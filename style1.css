@@ -1,0 +1,124 @@
+body {
+    background-color: #1BCED4;
+}
+
+.navbar {
+    position:relative;
+}
+
+.bg-peacock {
+    background-color: #036070;
+}
+
+#about-us {
+    background-image: url(images/bg-krishna-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.typewriter > center > #text-heading {
+    overflow: hidden; 
+    border-right: 0.15em solid rgb(168, 91, 3);
+    white-space: nowrap;
+    font-size: 500%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    animation: typing 6s steps(50, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: rgb(168, 91, 3);
+    }
+}
+
+#my-data {
+    transition: transform 0.3s ease;
+}
+
+#my-data > span {
+    position: relative;
+    right: -100%;
+    animation: slideInRight 2s ease-out forwards;
+}
+
+@keyframes slideInRight {
+    to {
+        right: 0;
+    }
+}
+
+/*
+#my-data:hover {
+    font-weight: bolder;
+    transform: scale(1.1);
+}*/
+
+#gallery-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.carousel-item > img {
+    border-radius: 10px;
+}
+
+#gallery-section > .container {
+    width: 70%;
+    height: 70%;
+}
+
+@media screen and (max-width: 768px) {
+    #gallery-section > .container {
+        /* Adjust width to 80% for mobile devices */
+        width: 80%;
+        height: 80%;
+    }
+}
+
+.peacock-1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+}
+
+.peacock-2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+}
+
+.peacock {
+    opacity: 0;
+    animation: fadeIn 5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+footer {
+    min-height: 50px;
+    padding: 20px;
+}
